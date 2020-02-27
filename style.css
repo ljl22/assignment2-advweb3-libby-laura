@@ -1,0 +1,32 @@
+/*
+Theme Name: Advanced Web 3 Assignment 2
+Theme URI:
+Author: L Libby
+Description: This theme is for assignment 2
+Version: 1.0
+License: Open
+Text Domain: Web Interactivity
+
+*/
+
+h1, h2, h3, h4, p {
+  font-family: 'Marck Script';
+}
+
+h2 {
+  color: #ff5151;
+}
+
+h3 {
+  padding-top: 45px;
+  color: #ff5151;
+}
+
+p {
+  color: #552244;
+  font-family: 'Poppins';
+}
+
+.whitefont {
+  color: #ffffff;
+}
