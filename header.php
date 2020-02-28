@@ -14,6 +14,6 @@
 
 <body>
 <div style="padding: 40px 40px 20px 40px; margin-bottom: 35px; background-color: #79bac1; color: #ffffff; text-align:center;">
-    <a href="http://localhost:81/wordpress/wordpress/" style="color:#ffffff;"><h1>&diams; Assignment 2, Advanced Web 3 &diams;</h1></a>
+    <a href="http://www.laurajlibby.me/wordpress/" style="color:#ffffff;"><h1>&diams; Assignment 2, Advanced Web 3 &diams;</h1></a>
       <h2 class="whitefont ">Practice Wordpress Theme</h2>
 </div>
