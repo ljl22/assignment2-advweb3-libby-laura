@@ -18,14 +18,17 @@
       <div class="row">
         <div class="col-lg-9">
           <?php if(get_header_image() == ''){?>
-            <h1><a href="<?php get_home_url();?>" style="color:#ff5151;"><?php bloginfo('name'); ?>
+            <h1><a href="<?php get_home_url();?>"><?php bloginfo('name'); ?>
             </a></h1><?php
             }else{?>
               <a href="<?php get_home_url();?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt="logo" /></a>
           <?php } ?>
         </div>
 
-        <div class="col-lg-9">
+        <div class="col-lg-3 d-flex align-items-center">
+          <nav>
+            <p><a href="#">Navigation goes here</a></p>
+          </nav>
         </div>
 
       </div>
