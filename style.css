@@ -27,7 +27,11 @@ p {
 }
 
 body {
-  background-color: #f5f2d0;
+  background-color: #FCF7F3;
+}
+
+#nav1 {
+  padding: 20px;
 }
 
 a {
