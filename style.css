@@ -30,12 +30,16 @@ body {
   background-color: #FCF7F3;
 }
 
-#nav1 {
-  padding: 20px;
-}
-
 a {
   color:#ff5151;
+}
+
+.center {
+  text-align: center;
+}
+
+#nav1 {
+  text-transform: uppercase;
 }
 
 a:hover {
