@@ -13,7 +13,22 @@
 </head>
 
 <body>
-<div style="padding: 40px 40px 20px 40px; margin-bottom: 35px; background-color: #79bac1; color: #ffffff; text-align:center;">
-    <a href="http://www.laurajlibby.me/wordpress/" style="color:#ffffff;"><h1>&diams; Assignment 2, Advanced Web 3 &diams;</h1></a>
-      <h2 class="whitefont ">Practice Wordpress Theme</h2>
-</div>
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <?php if(get_header_image() == ''){?>
+            <h1><a href="<?php get_home_url();?>" style="color:#ff5151;"><?php bloginfo('name'); ?>
+            </a></h1><?php
+            }else{?>
+              <a href="<?php get_home_url();?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt="logo" /></a>
+          <?php } ?>
+        </div>
+
+        <div class="col-lg-9">
+        </div>
+
+      </div>
+    </div>
+
+</header>
