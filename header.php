@@ -27,7 +27,7 @@
 
         <div class="col-lg-3 d-flex align-items-center">
           <nav>
-            <p><a href="#">Navigation goes here</a></p>
+            <p id="nav1"><a href="#">Navigation goes here</a></p>
           </nav>
         </div>
 
