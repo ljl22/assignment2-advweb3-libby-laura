@@ -38,4 +38,10 @@ a:hover {
 /**header**/
 header {
   background: #fff1f3;
+  margin-bottom: 15px;
+}
+
+/**footer**/
+footer {
+  margin-top: 25px;
 }
