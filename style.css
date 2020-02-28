@@ -31,7 +31,11 @@ a {
   color:#ff5151;
 }
 
+a:hover {
+  color:#ff5151;
+}
+
 /**header**/
 header {
-  background: #E5E5E5;
+  background: #fff1f3;
 }
