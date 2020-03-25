@@ -6,7 +6,7 @@
         while(have_posts()){
           the_post(); ?>
             <div class="col-md-12">
-              <?php the_post_thumbnail('large'); ?>
+              <?php the_post_thumbnail('medium'); ?>
 
               <h2><?php the_title(); ?></h2>
 
