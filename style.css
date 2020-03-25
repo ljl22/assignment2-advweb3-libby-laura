@@ -46,13 +46,22 @@ a:hover {
   color:#ff5151;
 }
 
-/**header**/
+/**header*****************************/
 header {
   background: #fff1f3;
   margin-bottom: 15px;
 }
 
-/**footer**/
+/**** single.php styling **************/
+
+/**thumbnail styling ********/
+.col-md-12 img {
+  width: 150px;
+  height: auto;
+
+}
+
+/**footer****************************/
 footer {
   margin-top: 25px;
 }
