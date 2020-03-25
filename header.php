@@ -28,13 +28,20 @@
           <?php } ?>
         </div>
 
-        <div class="col-lg-3 d-flex align-items-center">
+      <div class="row">
+        <div class="col-lg-12 d-flex align-items-center">
           <nav>
-              <?php wp_nav_menu (array('theme_location' => 'top-menu', 'container_class' => 'top-menu-class')); ?>
-
+              <?php
+                if(has_nav_menu('top-menu')){
+                wp_nav_menu(array('theme_location' => 'top-menu', 'container_class' => 'top-menu-class'));
+              }else{
+                echo "Please select a top menu via the dashboard for best results";
+              }
+              ?>
 
           </nav>
         </div>
+      </div>
 
       </div>
     </div>
