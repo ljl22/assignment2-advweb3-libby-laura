@@ -56,8 +56,9 @@ header {
 
 /**thumbnail styling ********/
 .col-md-12 img {
-    width: 150px;
+    max-width: 150px;
     height: auto;
+    object-fit: cover;
 }
 
 /**footer****************************/
