@@ -12,11 +12,7 @@
 
               <h2><?php the_title(); ?></h2>
 
-              <p class="center"><strong><?php echo "Published: " . get_the_date(); echo " | "; echo "Written by: " . get_the_author();?></strong></p>
-
               <p><?php the_content(); ?></p>
-
-
 
           </div>
       <?php

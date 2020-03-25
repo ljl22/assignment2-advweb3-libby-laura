@@ -30,7 +30,9 @@
 
         <div class="col-lg-3 d-flex align-items-center">
           <nav>
-            <p><a href="#" id="nav1">Navigation goes here</a></p>
+              <?php wp_nav_menu (array('theme_location' => 'top-menu', 'container_class' => 'top-menu-class')); ?>
+
+
           </nav>
         </div>
 
