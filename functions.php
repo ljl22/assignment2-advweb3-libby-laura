@@ -33,9 +33,8 @@ $custom_image_header = array(
 
 add_theme_support('custom-header', $custom_image_header);
 
-
 /*===================================================
-Add Menus to Our Themes
+Add Menus to My Themes
 =====================================================*/
 
 function register_my_menus(){
@@ -48,8 +47,6 @@ function register_my_menus(){
       )
     );
 }
-
 add_action('init', 'register_my_menus');
-
 
 ?>
