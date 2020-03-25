@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container" id="containerpaddingbottom">
   <div class="row">
     <?php
       if(have_posts()){
