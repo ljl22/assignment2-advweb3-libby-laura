@@ -55,11 +55,21 @@ header {
 /**** single.php styling **************/
 
 /**thumbnail styling ********/
-img.attachment-large.size-large.wp-post-image {
+/*.col-md-12 img {
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}*/
+
+/*img.attachment-large.size-large.wp-post-image {
     width: 150px;
     height: auto;
-}
+}*/
 
+.singlebannerimg {
+  width: 175px;
+  height: auto;
+}
 /**footer****************************/
 footer {
   margin-top: 25px;
