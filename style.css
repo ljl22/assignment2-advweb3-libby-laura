@@ -55,10 +55,9 @@ header {
 /**** single.php styling **************/
 
 /**thumbnail styling ********/
-.col-md-12 img {
-    max-width: 150px;
+img.attachment-large.size-large.wp-post-image {
+    width: 150px;
     height: auto;
-    object-fit: cover;
 }
 
 /**footer****************************/
