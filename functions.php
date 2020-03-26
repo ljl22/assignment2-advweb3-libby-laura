@@ -85,6 +85,16 @@ function blank_widgets_init(){
   ));
 
   register_sidebar(array(
+    'name'           => ('Right Sidebar'),
+    'id'             => 'right-sidebar',
+    'description'    => 'Right sidebar area for template',
+    'before_widget'  => '<div class="widget-right-sidebar">',
+    'after_widget'   => '</div>',
+    'before_title'   => '<h3 class="right-sidebar-widget-title">',
+    'after_title'    => '</h3>'
+  ));
+
+  register_sidebar(array(
     'name'           => ('Bottom left homepage'),
     'id'             => 'bottom left homepage',
     'description'    => 'Bottom left section for the homepage',
