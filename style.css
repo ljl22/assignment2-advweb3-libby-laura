@@ -76,7 +76,10 @@ header {
   object-fit: cover;
 }
 /**footer****************************/
-/*footer {
+footer {
   margin-top: 25px;
 }
-*/
+
+#paddingtp {
+  padding-top: 50px;
+}

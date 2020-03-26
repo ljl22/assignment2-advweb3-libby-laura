@@ -37,16 +37,29 @@
           </nav>
         </div>
 
-
-
     </div>
-  </footer>
+    <div class="col-md-12">
+        <?php dynamic_sidebar('bottom-left-widget-title'); ?>
+    </div>
 
-  <?php wp_footer(); ?>
-    <!--<div class="navbar fixed-bottom" style="background-color: #2a7886; color: #ffffff;">
+    <div class="col-md-12">
+        <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
+    </div>
+
+    <div class="col-md-12">
+        <?php dynamic_sidebar('bottom-right-widget-title'); ?>
+    </div>
+
+    <div class="navbar fixed-bottom" id="paddingtp" style="background-color: #2a7886; color: #ffffff;">
       <h4 class="whitefont">
         Created by: Laura L. for Advanced Web 3
       </h4>
-    </div>-->
+    </div>
+  </footer>
+
+
+
+
+
   </body>
 </html>
