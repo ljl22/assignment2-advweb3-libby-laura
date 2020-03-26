@@ -52,19 +52,18 @@ add_action('init', 'register_my_menus');
 /*===================================================
 Add widget area
 =====================================================*/
+
 function blank_widgets_init(){
   register_sidebar(array(
-    'name'          => ('Right Header'),
-    'id'            => 'right header',
-    'description'   => 'Right widget areas in header',
-    'before_widget' => '<div class="widget-header">',
-    'after_widget'  => '</div>',
-    'before_title'  =>  '<h3 class="header-widget-title">',
-    'after_title'   => '</h3>'
+    'name'           => ('Right Header'),
+    'id'             => 'right header',
+    'description'    => 'Right widget area in header',
+    'before_widget'  => '<div class="widget-header">',
+    'after_widget'   => '</div>',
+    'before_title'   => '<h3 class="header-widget-title">',
+    'after_title'    => '</h3>'
   ));
-
 }
-
 add_action('widgets_init', 'blank_widgets_init');
 
 
