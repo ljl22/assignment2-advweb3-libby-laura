@@ -1,7 +1,7 @@
   <footer>
     <div class="row">
 
-        <div class="col-md-4 d-flex align-items-center">
+      <div class="col-md-4 d-flex align-items-center">
           <nav>
               <?php
                 if(has_nav_menu('footer-left')){
@@ -36,6 +36,8 @@
               ?>
           </nav>
         </div>
+
+
 
     </div>
   </footer>

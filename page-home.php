@@ -6,29 +6,41 @@ Template Post Type: page
 ?>
 
 <?php get_header(); ?>
-<div class="container" id="containerpaddingbottom">
-  <div class="row">
-    <?php
-      if(have_posts()){
-        while(have_posts()){
-          the_post(); ?>
-            <div class="col-md-12">
-                <div class="singlebannerimg">
-                    <?php the_post_thumbnail('large'); ?>
-                </div>
+  <div class="container" id="containerpaddingbottom">
+    <div class="row">
+      <main>
+        <div class="col-md-12">
+          <?php dynamic_sidebar('hero-image'); ?>
+        </div>
+      </main>
+    </div><!-- row-->
 
-              <h2><?php the_title(); ?></h2>
+    <div class="row">
+      <main>
+        <div class="col-md-12">
+          <?php dynamic_sidebar('about-us'); ?>
+        </div>
+      </main>
+    </div><!-- row-->
 
-              <p><?php the_content(); ?></p>
+    <div class="row">
+      <main>
+        <div class="col-md-12">
+            <?php dynamic_sidebar('bottom-left-widget-title'); ?>
+        </div>
 
-          </div>
-      <?php
-        }// end while
-      }// end if
-      ?>
+        <div class="col-md-12">
+            <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
+        </div>
 
-  </div><!-- row-->
-</div> <!--container-->
+        <div class="col-md-12">
+            <?php dynamic_sidebar('bottom-right-widget-title'); ?>
+        </div>
+
+      </main>
+    </div><!-- row-->
+
+  </div> <!--container-->
 
 
 
