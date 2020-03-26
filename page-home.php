@@ -3,45 +3,37 @@
 Template Name: Home Page Layout
 Template Post Type: page
 */
-?>
+ get_header(); ?>
 
-<?php get_header(); ?>
   <div class="container" id="containerpaddingbottom">
-    <div class="row">
-      <main>
-        <div class="col-md-12">
-          <?php dynamic_sidebar('hero-image'); ?>
-        </div>
+    <main>
+      <div class="row">
+          <div class="col-md-12">
+            <?php dynamic_sidebar('hero-image'); ?>
+          </div>
+      </div><!-- row-->
+
+      <div class="row">
+          <div class="col-md-12">
+            <?php dynamic_sidebar('about-us'); ?>
+          </div>
+      </div><!-- row-->
+
+      <div class="row">
+          <div class="col-md-4">
+              <?php dynamic_sidebar('bottom-left-widget-title'); ?>
+          </div>
+
+          <div class="col-md-4">
+              <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
+          </div>
+
+          <div class="col-md-4">
+              <?php dynamic_sidebar('bottom-right-widget-title'); ?>
+          </div>
+        </div><!-- row-->
       </main>
-    </div><!-- row-->
-
-    <div class="row">
-      <main>
-        <div class="col-md-12">
-          <?php dynamic_sidebar('about-us'); ?>
-        </div>
-      </main>
-    </div><!-- row-->
-
-    <div class="row">
-      <main>
-        <div class="col-md-12">
-            <?php dynamic_sidebar('bottom-left-widget-title'); ?>
-        </div>
-
-        <div class="col-md-12">
-            <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
-        </div>
-
-        <div class="col-md-12">
-            <?php dynamic_sidebar('bottom-right-widget-title'); ?>
-        </div>
-
-      </main>
-    </div><!-- row-->
-
   </div> <!--container-->
-
 
 
 <?php get_footer(); ?>

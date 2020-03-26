@@ -52,7 +52,7 @@
 
     <div class="navbar fixed-bottom" id="paddingtp" style="background-color: #2a7886; color: #ffffff;">
       <h4 class="whitefont">
-        Created by: Laura L. for Advanced Web 3
+        Created by: Laura for Advanced Web 3
       </h4>
     </div>
   </footer>
@@ -60,6 +60,6 @@
 
 
 
-
+    <?php wp_footer(); ?>
   </body>
 </html>
