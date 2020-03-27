@@ -1,9 +1,10 @@
   <footer>
-    <div class="row">
+    <div class="container">
+      <div class="row">
 
 
 <!--footer widgets-->
-      <div class="col-md-4 d-flex align-items-center">
+     <div class="col-md-4 d-flex align-items-center">
           <nav>
               <?php
                 if(has_nav_menu('footer-left')){
@@ -40,7 +41,7 @@
         </div>
 
 <!--title widgets-->
-<!--    </div>
+  </div>
     <div class="col-md-4">
         <?php dynamic_sidebar('bottom-left-widget-title'); ?>
     </div>
@@ -52,11 +53,12 @@
     <div class="col-md-4">
         <?php dynamic_sidebar('bottom-right-widget-title'); ?>
     </div>
--->
-    <div class="navbar fixed-bottom" id="paddingtp" style="background-color: #2a7886; color: #ffffff;">
-      <h4 class="whitefont">
-        Created by: Laura for Advanced Web 3
-      </h4>
+
+      <div class="navbar fixed-bottom" id="paddingtp" style="background-color: #2a7886; color: #ffffff;">
+        <h4 class="whitefont">
+          Created by: Laura for Advanced Web 3
+        </h4>
+      </div>
     </div>
   </footer>
 
