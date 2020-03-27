@@ -15,10 +15,13 @@ h1, h2, h3, h4, p {
 
 h2 {
   color: #ff5151;
+  font-size: 38px;
 }
 
 h3 {
   color: #1eb2a6;
+  font-size: 32px;
+
 }
 
 p {
@@ -50,6 +53,11 @@ a:hover {
   color:#ff5151;
 }
 
+p.wp-caption-text {
+    font-style: italic;
+    font-size: 10px;
+    color: #5eb2a6;
+}
 /**header*****************************/
 header {
   background: #fff1f3;
@@ -70,6 +78,10 @@ h3.header-widget-title {
   padding-bottom: 100px;
 }
 
+h3.header-widget-title {
+    text-align: left;
+    /* padding-left: 40px; */
+}
 
 /**** single.php styling **************/
 
