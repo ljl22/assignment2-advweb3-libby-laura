@@ -8,6 +8,23 @@ Template Post Type: page
   <div class="container" id="containerpaddingbottom">
     <main>
       <div class="row">
+        <?php
+          if(have_posts()){
+            while(have_posts()){
+              the_post(); ?>
+                <div class="col-md-12">
+                  <?php the_post_thumbnail('large'); ?>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_excerpt(); ?></p>
+
+                </div>
+          <?php
+            }// end while
+          }// end if
+          ?>
+
+      </div><!-- row-->
+      <div class="row">
           <div class="col-md-12">
             <?php dynamic_sidebar('hero-image'); ?>
           </div>
@@ -20,15 +37,15 @@ Template Post Type: page
       </div><!-- row-->
 
       <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-12">
               <?php dynamic_sidebar('bottom-left-widget-title'); ?>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-12">
               <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-12">
               <?php dynamic_sidebar('bottom-right-widget-title'); ?>
           </div>
         </div><!-- row-->

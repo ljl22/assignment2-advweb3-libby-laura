@@ -38,15 +38,15 @@
         </div>
 
     </div>
-    <div class="col-md-12">
+    <div class="col-md-4">
         <?php dynamic_sidebar('bottom-left-widget-title'); ?>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-4">
         <?php dynamic_sidebar('bottom-middle-widget-title'); ?>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-4">
         <?php dynamic_sidebar('bottom-right-widget-title'); ?>
     </div>
 

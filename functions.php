@@ -52,6 +52,8 @@ add_action('init', 'register_my_menus');
 /*===================================================
 Add widget area
 =====================================================*/
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+
 
 function blank_widgets_init(){
   register_sidebar(array(
@@ -124,6 +126,36 @@ function blank_widgets_init(){
     'after_title'    => '</h3>'
   ));
 }
+
+/*register_sidebar(array(
+  'name'           => ('Footer Left'),
+  'id'             => 'footer Left',
+  'description'    => 'footer left widget',
+  'before_widget'  => '<div class="footer-left-class">',
+  'after_widget'   => '</div>',
+  'before_title'   => '<h3 class="footer-left-title">',
+  'after_title'    => '</h3>'
+));
+}  register_sidebar(array(
+    'name'           => ('Footer middle'),
+    'id'             => 'footer middle',
+    'description'    => 'footer middle widget',
+    'before_widget'  => '<div class="footer-center-class">',
+    'after_widget'   => '</div>',
+    'before_title'   => '<h3 class="footer-middle-title">',
+    'after_title'    => '</h3>'
+  ));
+}  register_sidebar(array(
+    'name'           => ('Footer right'),
+    'id'             => 'footer right',
+    'description'    => 'Footer right widget',
+    'before_widget'  => '<div class="footer-right-class">',
+    'after_widget'   => '</div>',
+    'before_title'   => '<h3 class="footer-right-title">',
+    'after_title'    => '</h3>'
+  ));
+}
+*/
 add_action('widgets_init', 'blank_widgets_init');
 
 
