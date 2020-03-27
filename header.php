@@ -23,7 +23,7 @@
 <header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <?php if(get_header_image() == ''){?>
             <h1><a href="<?php echo get_home_url();?>"><?php bloginfo('name'); ?>
             </a></h1><?php
@@ -32,8 +32,8 @@
           <?php } ?>
         </div>
 
-      <div class="row">
-        <div class="col-lg-5 d-flex align-items-center">
+      <!--<div class="row">
+        <div class="col-lg-4 d-flex align-items-center">
           <nav>
               <?php
                 if(has_nav_menu('top-menu')){
@@ -44,9 +44,9 @@
               ?>
 
           </nav>
-        </div>
+        </div>-->
 
-        <div class="col-lg-3">
+        <div class="col-lg-6">
           <?php dynamic_sidebar('right header'); ?>
         </div>
 

@@ -13,8 +13,12 @@ h1, h2, h3, h4, p {
   padding-top: 10px;
 }
 
-h2, h3 {
+h2 {
   color: #ff5151;
+}
+
+h3 {
+  color: #1eb2a6;
 }
 
 p {
@@ -50,7 +54,18 @@ a:hover {
 header {
   background: #fff1f3;
   margin-bottom: 15px;
+  padding-top: 15px;
 }
+
+.widget-header li {
+    display: inline;
+    padding: 5px;
+}
+
+h3.header-widget-title {
+    padding-left: 40px;
+}
+
 #containerpaddingbottom {
   padding-bottom: 100px;
 }
