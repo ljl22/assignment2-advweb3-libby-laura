@@ -49,10 +49,32 @@ function register_my_menus(){
 }
 add_action('init', 'register_my_menus');
 
+
+/*===================================================
+Remove error code in footer
+=====================================================*/
+
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+
+
 /*===================================================
 Add widget area
 =====================================================*/
-remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+
+/* widget footer
+*/
+function the_footer_widgets(){
+  register_sidebar(array(
+    'name'            => ('right footer'),
+    'id'              => 'right-footer',
+    'description'     => 'Right footer widget area'
+    'before_widget'   => '<div class="widget-footer">',
+    'after_widget'    => '</div>'
+    'before_title'    => '<h3 class="footer-widget-title">',
+    'after_title'     => '</h3>',
+  ));
+}
+add_action('widgets_init', 'the_footer_widgets');
 
 
 function blank_widgets_init(){
