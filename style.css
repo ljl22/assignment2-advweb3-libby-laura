@@ -105,6 +105,11 @@ h3.header-widget-title {
 /**footer****************************/
 footer {
   margin-top: 25px;
+  background-color: #2a7886;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 #paddingtp {

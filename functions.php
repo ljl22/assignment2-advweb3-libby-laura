@@ -61,8 +61,7 @@ remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
 Add widget area
 =====================================================*/
 
-/* widget footer
-*/
+/* Footer widgets */
 function the_footer_widgets(){
   register_sidebar(array(
     'name'            => ('right footer'),
@@ -73,10 +72,32 @@ function the_footer_widgets(){
     'before_title'    => '<h3 class="footer-widget-title">',
     'after_title'     => '</h3>',
   ));
+
+  register_sidebar(array(
+    'name'            => ('middle footer'),
+    'id'              => 'middle-footer',
+    'description'     => 'middle footer widget area',
+    'before_widget'   => '<div class="middle-widget-footer">',
+    'after_widget'    => '</div>',
+    'before_title'    => '<h3 class="middle-footer-widget-title">',
+    'after_title'     => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name'            => ('left footer'),
+    'id'              => 'left-footer',
+    'description'     => 'left footer widget area',
+    'before_widget'   => '<div class="left-widget-footer">',
+    'after_widget'    => '</div>',
+    'before_title'    => '<h3 class="left-footer-widget-title">',
+    'after_title'     => '</h3>',
+  ));
 }
 add_action('widgets_init', 'the_footer_widgets');
 
 
+
+/* Header and other widgets */
 function blank_widgets_init(){
   register_sidebar(array(
     'name'           => ('Right Header'),
@@ -149,36 +170,6 @@ function blank_widgets_init(){
   ));
 }
 
-/*register_sidebar(array(
-  'name'           => ('Footer Left'),
-  'id'             => 'footer Left',
-  'description'    => 'footer left widget',
-  'before_widget'  => '<div class="footer-left-class">',
-  'after_widget'   => '</div>',
-  'before_title'   => '<h3 class="footer-left-title">',
-  'after_title'    => '</h3>'
-));
-}  register_sidebar(array(
-    'name'           => ('Footer middle'),
-    'id'             => 'footer middle',
-    'description'    => 'footer middle widget',
-    'before_widget'  => '<div class="footer-center-class">',
-    'after_widget'   => '</div>',
-    'before_title'   => '<h3 class="footer-middle-title">',
-    'after_title'    => '</h3>'
-  ));
-}  register_sidebar(array(
-    'name'           => ('Footer right'),
-    'id'             => 'footer right',
-    'description'    => 'Footer right widget',
-    'before_widget'  => '<div class="footer-right-class">',
-    'after_widget'   => '</div>',
-    'before_title'   => '<h3 class="footer-right-title">',
-    'after_title'    => '</h3>'
-  ));
-}
-*/
 add_action('widgets_init', 'blank_widgets_init');
-
 
 ?>

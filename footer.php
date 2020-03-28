@@ -4,46 +4,7 @@
 
 
 
-
-          <!--footer widgets-->
-            <!--   <div class="col-md-4 d-flex align-items-center">
-                    <nav>
-                        <?php
-                          if(has_nav_menu('footer-left')){
-                          wp_nav_menu(array('theme_location' => 'footer-left', 'container_class' => 'footer-left-class'));
-                        }else{
-                          echo "Please select a footer left via the dashboard for best results";
-                        }
-                        ?>
-                    </nav>
-                  </div>
-
-                  <div class="col-md-4 d-flex align-items-center">
-                    <nav>
-                        <?php
-                          if(has_nav_menu('footer-middle')){
-                          wp_nav_menu(array('theme_location' => 'footer-middle', 'container_class' => 'footer-middle-class'));
-                        }else{
-                          echo "Please select a footer middle menu via the dashboard for best results";
-                        }
-                        ?>
-                    </nav>
-                  </div>
-
-                  <div class="col-md-4 d-flex align-items-center">
-                    <nav>
-                        <?php
-                          if(has_nav_menu('footer-right')){
-                          wp_nav_menu(array('theme_location' => 'footer-right', 'container_class' => 'footer-right-class'));
-                        }else{
-                          echo "Please select a footer right via the dashboard for best results";
-                        }
-                        ?>
-                    </nav>
-                  </div>
-          -->
-
-          <!--title widgets-->
+<!--title widgets----------------------------------------------------------->
           <!--  </div>
               <div class="col-md-4">
                   <?php dynamic_sidebar('bottom-left-widget-title'); ?>
@@ -58,16 +19,25 @@
               </div>
           -->
 
-        <div class="col-lg-12">
+<!---FOOTER WIDGETS---------------------------------------------------------->
+        <div class="col-lg-3">
+          <?php dynamic_sidebar('left-footer'); ?>
+        </div>
+
+        <div class="col-lg-3">
+          <?php dynamic_sidebar('middle-footer'); ?>
+        </div>
+
+        <div class="col-lg-3">
           <?php dynamic_sidebar('right-footer'); ?>
         </div>
 
-
-      <div class="navbar fixed-bottom" id="paddingtp" style="background-color: #2a7886; color: #ffffff;">
-        <h4 class="whitefont">
+      <div class="col-lg-3">
+        <h4>
           Created by: Laura for Advanced Web 3
         </h4>
       </div>
+
     </div>
   </footer>
 
