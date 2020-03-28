@@ -67,9 +67,9 @@ function the_footer_widgets(){
   register_sidebar(array(
     'name'            => ('right footer'),
     'id'              => 'right-footer',
-    'description'     => 'Right footer widget area'
+    'description'     => 'Right footer widget area',
     'before_widget'   => '<div class="widget-footer">',
-    'after_widget'    => '</div>'
+    'after_widget'    => '</div>',
     'before_title'    => '<h3 class="footer-widget-title">',
     'after_title'     => '</h3>',
   ));
